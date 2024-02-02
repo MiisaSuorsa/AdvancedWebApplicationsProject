@@ -1,5 +1,4 @@
 var express = require('express');
-//const session = require('express-session')
 const mongoose = require("mongoose");
 const Users = require('../models/Users');
 const Matches = require('../models/Matches');
@@ -162,7 +161,7 @@ router.post('/secret/profile',
         bcrypt.genSalt(10, (err, salt) => {
             bcrypt.hash(req.body.password, salt, (err, hash) => {
                 if(err) return next(err);
-                //update
+
                 //update user db
                 Users.updateOne({ username: req.user.username }, { $set: { email: req.body.email, name: req.body.name, password: hash, about: req.body.about }}, (err, result) =>{
                     if(err) return next(err);

@@ -39,7 +39,7 @@ function initializeCode(){
                 //get list of the matched users
                 console.log("got the users list: " + matches);
                 userList = matches;
-                //show matches and chat buttons (?)
+
                 showMatches();
             }
         })

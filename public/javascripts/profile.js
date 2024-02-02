@@ -10,12 +10,9 @@ if(document.readyState !== "loading"){
 
 function initializeCode(){
 
-    const update = document.getElementById("profile-form");
-
     const authToken = localStorage.getItem("auth_token");
     console.log(authToken);
 
-    //const profileCard = document.getElementById("profile-card");
 
     if(!authToken){
         window.location.href="/login";
