@@ -1,0 +1,65 @@
+/* Mobile phones */
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 90%;
+}
+
+.game-card {
+  display: flex;
+  padding-top: 30px;
+  flex-direction: column;
+}
+
+.usercard {
+  padding: 20px;
+  width: fit-content;
+  outline: 2px solid #a863a3;
+  background-color: #ecc9e9;
+}
+
+.buttons-container {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+
+.btn {
+  margin-right: 25px;
+}
+
+#chat-area {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#chat-area * {
+  padding: 8px;
+  width: fit-content;
+  background-color: #ecc9e9;
+}
+
+/* tablets */
+@media only screen and (min-width: 600px){
+  .body{
+    width: 85%;
+  }
+
+  .buttons-container{
+    justify-content: flex-start;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 992px){
+
+  .body{
+    width: 70%;
+  }
+
+  .buttons-container{
+    justify-content: flex-start;
+  }
+
+}

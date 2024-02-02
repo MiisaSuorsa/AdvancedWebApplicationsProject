@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    a(href="/user") Return
+    p Here you can read about other users and click 'YES' if you like them.
+    .game-card
+        .usercard
+            h4#name
+            h6#username
+            p#about
+
+        .buttons-container
+            tr: button#no(type="button", class="btn", onclick="buttonHandle('no')") No
+            tr: button#yes(type="button", class="btn", onclick="buttonHandle('yes')") Yes
+
+
+    script(src="/javascripts/game.js")

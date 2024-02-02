@@ -1,0 +1,42 @@
+extends layout
+
+block content
+
+    a(href="/user") Return
+
+    h2 Profile
+
+    h6 Your current information:
+
+    .email
+        h6 Email: 
+        p#email
+
+    .name
+        h6 Name: 
+        p#name
+
+    .username
+        h6 Username: 
+        p#username
+
+    .about
+        h6 About: 
+        p#about
+
+
+    h4 Update yor profile information.
+    form(id="profile-form" action="", method="POST")
+        label(for="email") Email (10 characters):
+        input#new_email(type="text", name="email")
+        label(for="name") Name (3 characters):
+        input#new_name(type="text", name="name")
+        label(for="password") Password (8 characters):
+        input#new_password(type="text", name="password")
+        label(for="about") Descripe yourself:
+        input#new_about(type="text", name="about")
+        button#update_btn(type="submit", class="btn") Update
+        p
+        div#msg(class="card-panel")
+
+    script(src="/javascripts/profile.js")

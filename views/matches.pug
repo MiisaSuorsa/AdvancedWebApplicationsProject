@@ -1,0 +1,19 @@
+extends layout
+
+block content
+
+    a(href="/user") Return
+
+    div#match-container
+        div#match-card
+            p Here you can see your matches
+
+    div#chat-container(style="display: none;")
+        h4#chat
+        div#chat-area
+
+        div#input-field
+            input#new-msg(type="text", placeholder="Type here...")
+            button#send-msg(type="button", class="btn") Send
+
+    script(src="/javascripts/matches.js" defer)

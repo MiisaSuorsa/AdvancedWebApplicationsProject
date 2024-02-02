@@ -1,0 +1,25 @@
+extends layout
+
+block content
+
+    a(href="/") Return
+
+    h2 Register
+    h6 Fill in to create a new profile.
+    form(id="register-form" action="", method="POST")
+        label(for="email") Email (10 characters):
+        input#new_email(type="text", name="email")
+        label(for="name") Name (3 characters):
+        input#new_name(type="text", name="name")
+        label(for="username") Username (3 characters):
+        input#new_username(type="text", name="username")
+        label(for="password") Password (8 characters):
+        input#new_password(type="text", name="password")
+        label(for="about") Descripe yourself:
+        input#new_about(type="text", name="about")
+        button#register_btn(type="submit", class="btn") Register
+        p
+        div#error(class="card-panel")
+
+
+    script(src="/javascripts/register.js")
