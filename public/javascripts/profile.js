@@ -38,48 +38,6 @@ function initializeCode(){
             document.getElementById("username").innerText = user.username;
             document.getElementById("about").innerText = user.about;
 
-            /*
-            let row = document.createElement("tr");
-
-            //create element for email
-            let emailCell = document.createElement("td");
-            let email = document.createElement("p");
-            email.innerText = "Email: " + user.email;
-            emailCell.appendChild(email);
-
-            //create element for name
-            let nameCell = document.createElement("td");
-            let name = document.createElement("p");
-            name.innerText = "Name: " + user.name;
-            nameCell.appendChild(name);
-
-            //create element for username
-            let usernameCell = document.createElement("td");
-            let username = document.createElement("p");
-            username.innerText = "Username: " + user.username;
-            usernameCell.appendChild(username);
-
-            //create element for about
-            let aboutCell = document.createElement("td");
-            let about = document.createElement("p");
-            about.innerText = "About: " + user.about;
-            aboutCell.appendChild(about);
-
-            //create chat button to chat with user
-            let buttonCell = document.createElement("td");
-            let button = document.createElement("button");
-            button.setAttribute("id","user");
-            button.innerText = "chat"
-            //button.setAttribute("onClick", "buttonHandle('" + userList[i] + "')");
-            buttonCell.appendChild(button);
-
-            row.appendChild(emailCell);
-            row.appendChild(nameCell);
-            row.appendChild(usernameCell);
-            row.appendChild(aboutCell);
-            row.appendChild(buttonCell);
-            profileCard.appendChild(row);
-            */
         })
         .catch((e) => {
             console.log("error" + e);
